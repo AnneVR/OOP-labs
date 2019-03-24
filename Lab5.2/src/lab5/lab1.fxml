@@ -62,5 +62,6 @@
             <Image url="@images/flower.png" />
          </image>
       </ImageView>
+      <Label layoutX="30.0" layoutY="15.0" text="Anne Dudina, 23534/3" textFill="LIMEGREEN" visible="false" />
    </children>
 </AnchorPane>
