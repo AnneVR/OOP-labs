@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #32CD32;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab5.Lab1Controller">
+   <children>
+      <AnchorPane layoutY="104.0" prefHeight="497.0" prefWidth="800.0" style="-fx-background-color: #FFFFFF;">
+         <children>
+            <Button fx:id="backButton" layoutX="21.0" layoutY="404.0" mnemonicParsing="false" onAction="#back" prefHeight="66.0" prefWidth="141.0" style="-fx-background-color: #32CD32;" text="Back" textFill="YELLOW">
+               <font>
+                  <Font name="Kristen ITC" size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="357.0" layoutY="41.0" prefHeight="53.0" prefWidth="319.0" text="Select your date of birth" textFill="LIMEGREEN">
+               <font>
+                  <Font name="Kristen ITC" size="25.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="textArea" layoutX="233.0" layoutY="205.0" prefHeight="259.0" prefWidth="544.0" promptText="Создать приложение, вычисляющее возраст , c 3 параметрами : день, месяц , год( дата рождения), где месяц задается в виде строки: май или январь и т. п.Результатом работы приложения должен быть возраст , выраженный в количестве лет, месяцев и дней на текущую дату.">
+               <font>
+                  <Font name="Kristen ITC" size="14.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="startButton" layoutX="21.0" layoutY="167.0" mnemonicParsing="false" onAction="#start1" prefHeight="66.0" prefWidth="141.0" style="-fx-background-color: #32CD32;" text="Start!" textFill="YELLOW">
+               <font>
+                  <Font name="Kristen ITC" size="33.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <DatePicker fx:id="Date" layoutX="390.0" layoutY="116.0" prefHeight="40.0" prefWidth="239.0">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </DatePicker>
+         </children>
+      </AnchorPane>
+      <Label layoutX="333.0" layoutY="9.0" text="Lab1" textFill="YELLOW">
+         <font>
+            <Font name="Kristen ITC" size="55.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="103.0" fitWidth="102.0" layoutX="200.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/flower.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="103.0" fitWidth="102.0" layoutX="490.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/flower.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
