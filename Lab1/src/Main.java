@@ -144,15 +144,15 @@ public class Main
                 int yearB = Integer.parseInt(in.nextLine());
 
                 int monthNumber = getMonthNumber(dayB,monthB,yearB);
-
+                LocalDate date = LocalDate.of(yearB, monthNumber, dayB);
                 LocalDate today = LocalDate.now();
-                if (yearB > today.getYear())
+                if ((Period.between(date, today).getDays() < 0)
+                        || (Period.between(date, today).getMonths() < 0)
+                        || (Period.between(date, today).getYears() < 0))
                 {
-                    System.out.println("Wrong year!");
+                    System.out.println("Wrong date!");
                     throw new IllegalArgumentException();
                 }
-
-                LocalDate date = LocalDate.of(yearB, monthNumber, dayB);
                 int years = Period.between(date, today).getYears();
                 int months = Period.between(date, today).getMonths();
                 int days = Period.between(date, today).getDays();
